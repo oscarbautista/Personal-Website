@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Oscar Bautista | Software Engineer</title>
+  <meta charset="utf-8"/>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body id="body">
+  
+ <!-- Navbar -->
+  <div id="navbar" class="hideNav">
+    <h1>OSCAR BAUTISTA</h1>
+    <div id="menuButton" onclick="showMenu()">
+      <p>Menu</p>
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+
+ <!-- Home -->
+  <div id="home">
+    <div id="homeBg">
+    </div>
+    
+    <div id="menu" class="hideMenu">
+      <i class="fas fa-times" onclick="hideMenu()"></i>
+      <div id="menuLinks">
+        <p onclick="scrollToHome()">Home</p>
+        <p onclick="scrollToAbout()">About</p>
+        <p onclick="scrollToProjects()">Projects</p>
+        <p onclick="scrollToContact()">Contact</p>
+        <a href="resume.pdf"><p>Resume</p></a>
+      </div>
+    </div>
+
+    <div id="menuDarken" class="hideMenu">
+    </div>
+
+    <div id="homeTitle">
+      <h1 class="foreground">OSCAR BAUTISTA</h1>
+      <p>Developer. Artist. Keyboard Enthusiast.</p>
+    </div>
+
+    <div id="homeBtn">
+      <button class="foreground" onclick="scrollToAbout()"><img src="img/down.png" alt="Down Arrow" height="48" width="48" ></button>
+    </div>
+  </div>
+
+  <div id="about" class="foreground">
+    <h2>About Me</h2>
+    <p>I'm a software developer studying Computer Science at the University of Georgia. When I'm not working on keyboards or playing badminton, I enjoy tinkering with mobile app development and UI design. I'm currently looking for full time opportunities for January 2019 with interests in software, web, and full stack development.</p> 
+    <p>Feel free to <b onclick="scrollToContact()">contact</b> me with any questions.</p>
+  </div>
+
+  <h1 id="projectSectionTitle">Some of the projects that I've worked on</h1>
+
+  <div id="projectSection" class="foreground">
+
+    <div class="project">
+      <div class="projDesc" id="p1Desc">
+        <h2>Beat Blocks</h2>
+        <p>Designed to encourage a more collaborative and intuitive music-making process. The Beat Blocks table allows up to four people to mix and match different sounds to create music based on the blocks they place in the middle.</p>
+      </div>
+        
+      <div class="projPic" id="proj1"></div>
+    </div>
+
+    <div class="project">
+      <div class="projDesc">
+        <h2>EzNIC</h2>
+        <p>Created to help users with minimum network knowledge to switch the network interface card and modify its IP address, subnet mask, default gateway, and DNS address. Won the Diversified "NIC of Time" challenge at Hack GSU.</p>
+      </div>
+
+      <div class="projPic" id="proj2"></div>
+    </div>
+
+    <div class="project">
+      <div class="projDesc">
+        <h2>Click Clack Crawler</h2>
+        <p>A web page designed to help people who are new to building keyboards find the parts they need to get started. Because most websites don't have all the parts needed to build a keyboard, this is meant to be a resource to help you find the parts you need at the lowest cost.</p>
+      </div>
+
+      <div class="projPic" id="proj3"></div>
+    </div>
+
+    <div class="project">
+      <div class="projDesc">
+        <h2>Frogify</h2>
+        <p>Using the Spotify API, this mobile webpage allows users to create an interactie playlist where anyone at a social gathering can vote for the next played song. Created as a part of a team for UGA Hacks</p>
+      </div>
+
+      <div class="projPic" id="proj4"></div>
+    </div>
+
+    <div class="project">
+      <div class="projDesc">
+        <h2>T2 Cinemas Website</h2>
+        <p>A fully functional movie theater website capable of customer registration, ticket ordering, and displaying movie information. This was implemented in a team of four for Software Engineering class.</p>
+      </div>
+
+      <div class="projPic" id="proj5"></div>
+    </div>
+  </div>
+
+  <div id="contact">
+    <h2>Contact</h2>
+    <div id="contactIcons">
+      <a href="https://www.linkedin.com/in/oscar-bautista-121237139/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/oscarbautista"><i class="fab fa-github"></i></a>
+      <a href="mailto:obautista@uga.edu"><i class="fas fa-envelope"></i></a>
+      <a href="resume.pdf"><i class="fas fa-file-alt"></i></a>
+    </div>   
+    <p>Oscar Bautista</p> 
+  </div>
+
+  <script src="script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
