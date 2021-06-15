@@ -17,21 +17,25 @@ $(window).scroll(function() {
 function scrollToHome () {
 	var position = $("#home").position();
 	window.scrollTo({top: position.top - 50, behavior: "smooth"});
+	hideMenu();
 }
 
 function scrollToAbout () {
 	var position = $("#about").position();
 	window.scrollTo({top: position.top - 50, behavior: "smooth"});
+	hideMenu();
 }
 
 function scrollToProjects () {
 	var position = $("#projectSectionTitle").position();
 	window.scrollTo({top: position.top - 50, behavior: "smooth"});
+	hideMenu();
 }
 
 function scrollToContact () {
 	var position = $("#contact").position();
 	window.scrollTo({top: position.top - 50, behavior: "smooth"});
+	hideMenu();
 }
 
 function hideMenu () {
